@@ -6,7 +6,7 @@ import axios from 'axios'
 import { useEffect } from 'react'
 const Post = () => {
     const  [data,setData]  = useState([]);
-    const [pageNo,setPageNo] = useState(1);
+    const [pageNo,setPageNo] = useState(3);
     useEffect( ()=>{
          axios.get(`https://picsum.photos/v2/list?page=${pageNo}&limit=5`)
         .then((res)=>setData(res.data))

@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Pagination = () => {
+const Pagination = ({pageNo,setPageNo}) => {
   return (
     <>
-        <div>
-            i am Pagination
+        <div className='pagination-container'>
+           <div className='page-btn'>{"<"}</div>
+           <div className='page-btn'>{pageNo}</div>
+           <div className='page-btn'>{">"}</div>
         </div>
     </>
   )

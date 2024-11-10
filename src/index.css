@@ -11,3 +11,14 @@ img{
     height: 200px;
     border-radius: 20px;
 }
+.pagination-container{
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.page-btn{
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+}
